@@ -1,3 +1,4 @@
+--CREATE A TABLE FOR ORDERS
 SELECT 
   OrderID,
   CustomerName,
@@ -11,3 +12,8 @@ FROM (
 ) AS sub,
 unnest(ProductArray) AS product;
 
+
+--ANSWER TO QUESTION 2----
+---CREATE A TABLE FOR ORDERITEMS AND SELECT AS BELOW
+SELECT DISTINCT OrderID, CustomerName
+FROM OrderDetails;
